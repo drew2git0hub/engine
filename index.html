@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>3D Object Engine — Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <div class="ui">
+      <div><strong>3D Object Engine (Non-voxel)</strong></div>
+      <div style="margin-top:6px">Objects: <span id="objCount">0</span></div>
+      <div style="margin-top:6px">Gravity: <span id="gravVal">-9.81</span></div>
+      <div class="controls">
+        <button id="spawnSphere">구형 개체 생성</button>
+        <button id="spawnBox">박스 개체 생성</button>
+        <button id="clearAll">모두 제거</button>
+      </div>
+    </div>
+    <canvas id="c"></canvas>
+  </div>
+
+  <!-- three.js from CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.152.2/build/three.min.js"></script>
+  <script src="js/physics.js"></script>
+  <script src="js/objectPool.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
